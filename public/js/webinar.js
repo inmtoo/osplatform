@@ -32,7 +32,8 @@ const elements = {
     connectButton: document.getElementById("connect")
 }
 
-const webSocket = new Ws("ws://192.168.1.50:8080");
+// const webSocket = new Ws("ws://192.168.1.50:8080");
+const webSocket = new Ws("ws://45.133.19.19:8080");
 let rtc = new Rtc(new Webinar());
 
 webSocket.listeners.open = function () {
